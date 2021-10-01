@@ -27,19 +27,7 @@
              console.log(this.db.get(id));
          }.bind(this));
      }
-     static runTests(truck) {
-         'use strict';
-         console.log('==================================== running tests for truck...');
-
-         truck.createOrder({ emailAddress: 'me@goldfinger.com', coffee: 'double mocha'});
-         truck.createOrder({ emailAddress: 'dr@no.com', coffee: 'decaf'});
-         truck.createOrder({ emailAddress: 'm@bond.com', coffee: 'earl grey'});
-         truck.printOrders();
-         truck.deliverOrder('dr@no.com');
-         truck.deliverOrder('m@bond.com');
-         truck.printOrders();
-     }
- }
+    }
  App.Truck = Truck;
  window.App = App;
 })(window);
